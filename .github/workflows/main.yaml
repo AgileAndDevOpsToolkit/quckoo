@@ -31,7 +31,7 @@ jobs:
     - name: Install and Build 🔧
       run: |
         npm ci
-        npm run build -- --base-href="https://fmistdev.github.io/quckoo/"
+        npm run build -- --base-href="/${{ github.event.repository.name }}/"
       working-directory: ./app
       
     - name: Deploy
