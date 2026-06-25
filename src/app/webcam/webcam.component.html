@@ -1,0 +1,12 @@
+<div class="webcam-container">
+    <video #videoElement autoplay></video>
+
+    <div class="controls">
+        <button (click)="startCamera()" [disabled]="isCameraActive">Start Camera</button>
+        <button (click)="stopCamera()" [disabled]="!isCameraActive">Stop Camera</button>
+    </div>
+
+    <!-- <input type="text" [value]="qrResultString"> -->
+    
+    <textarea class="qr-result-string" [(ngModel)]="qrResultString"></textarea>
+</div>

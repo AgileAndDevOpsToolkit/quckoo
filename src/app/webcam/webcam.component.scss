@@ -1,0 +1,24 @@
+.webcam-container {
+    text-align: center;
+    position: relative;
+    // max-width: 640px; /* Fixe une largeur maximale pour les plus grands écrans */
+    width: 100%;
+  }
+  
+  video {
+    // width: 100%; /* Rend la vidéo responsive */
+    height: auto;
+    border: 2px solid black;
+    max-height: 200px;
+    max-width: 300px;
+  }
+  
+  .controls {
+    margin-top: 10px;
+  }
+  
+  textarea.qr-result-string {
+    width: 100%;
+    height: 3rem;
+    max-width: 300px;
+  }

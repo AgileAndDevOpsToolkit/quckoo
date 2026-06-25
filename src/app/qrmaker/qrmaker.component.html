@@ -1,0 +1,20 @@
+<div class="main-container">
+
+    <input type="text" [(ngModel)]="qrCodeText">
+    <!-- <input type="text" [(ngModel)]="errorCorrectionLevel" placeholder="L, M, Q, H"> -->
+
+    <select [(ngModel)]="errorCorrectionLevel" id="qr-select">
+        <option value="L">Low ~7% correction</option>
+        <option value="M">Medium ~15% correction</option>
+        <option value="Q">Quartile ~25% correction</option>
+        <option value="H">High ~30% correction</option>
+      </select>
+
+    <button (click)="generateQRCode()">Generate QR code</button>
+
+    <!-- Le QR code SVG sera affiché ici -->
+    <div #qrcode></div>
+
+
+
+</div>
