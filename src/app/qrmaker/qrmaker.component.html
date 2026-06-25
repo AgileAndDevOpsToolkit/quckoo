@@ -12,6 +12,22 @@
 
     <button (click)="generateQRCode()">Generate QR code</button>
 
+    <!-- Options de téléchargement si un QR code est généré -->
+    @if (hasQrCode) {
+      <div class="download-container">
+        <div class="options-group">
+          <label>Fond du PNG :</label>
+          <label class="radio-label">
+            <input type="radio" [(ngModel)]="transparentBackground" [value]="false"> Blanc
+          </label>
+          <label class="radio-label">
+            <input type="radio" [(ngModel)]="transparentBackground" [value]="true"> Transparent
+          </label>
+        </div>
+        <button class="download-btn" (click)="downloadAsPNG()">Télécharger en PNG</button>
+      </div>
+    }
+
     <!-- Le QR code SVG sera affiché ici -->
     <div #qrcode></div>
 

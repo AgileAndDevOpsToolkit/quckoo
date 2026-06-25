@@ -4,4 +4,57 @@
     position: relative;
 
     text-align: center;
-  }
+}
+
+.download-container {
+    margin: 1.5rem auto;
+    padding: 1rem;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .options-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.95rem;
+
+        label {
+            font-weight: 500;
+        }
+
+        .radio-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            cursor: pointer;
+            font-weight: normal;
+
+            input {
+                margin: 0;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .download-btn {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: #218838;
+        }
+    }
+}
